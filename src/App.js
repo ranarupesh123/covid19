@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import CovidApp from "./components/CovidApp";
-// import Help from "./components/Help";
 import Navbar from "./components/Navbar";
 import Paper from "./components/Paper";
-import StaySafe from "./components/StaySafe";
+
 import Symptoms from "./components/Symptoms";
 
 class App extends Component {
@@ -46,16 +45,6 @@ class App extends Component {
                 path="/symptoms"
                 render={() => <Symptoms isDarkMode={isDarkMode} />}
               />
-              {/* <Route
-                exact
-                path="/stay-safe"
-                render={() => <StaySafe isDarkMode={isDarkMode} />}
-              /> */}
-              {/* <Route
-                exact
-                path="/essentials"
-                render={() => <Help isDarkMode={isDarkMode} />}
-              /> */}
               <Route
                 path="/"
                 render={() => (

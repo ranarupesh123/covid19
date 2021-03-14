@@ -10,14 +10,14 @@ import {
   faSyncAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-// import Barchart from './Barchart';
-// import Charts from './Charts';
-// import DisplayTable from "./DisplayTable";
-// import Footer from "./Footer";
+import Barchart from "./Barchart";
+import Charts from "./Charts";
+import DisplayTable from "./DisplayTable";
+import Footer from "./Footer";
 import MapSection from "./MapSection";
 import Overview from "./Overview";
 
-// import colors from '../constants/colors';
+import colors from "../constants/colors";
 import stateCodes from "../constants/stateCodes";
 import * as animationData from "../assets/loading.json";
 
@@ -260,7 +260,7 @@ class CovidApp extends Component {
               />
             </div>
           </div>
-          {/* <div className={classes.chartArea}>
+          <div className={classes.chartArea}>
             <div className={classes.chartRes}>
               <Charts
                 data={this.state.casesTimeline}
@@ -271,7 +271,7 @@ class CovidApp extends Component {
               <div className={classes.tinyChart}>
                 <div
                   className={classes.tinych}
-                  style={{ background: 'rgba(249, 52, 94,.1)' }}
+                  style={{ background: "rgba(249, 52, 94,.1)" }}
                 >
                   <h3 style={{ color: colors.red }}>confirmed</h3>
                   <Barchart
@@ -285,7 +285,7 @@ class CovidApp extends Component {
               <div className={classes.tinyChart}>
                 <div
                   className={classes.tinych}
-                  style={{ background: 'rgba(250, 100, 0,.1)' }}
+                  style={{ background: "rgba(250, 100, 0,.1)" }}
                 >
                   <h3 style={{ color: colors.orange }}>active</h3>
                   <Barchart
@@ -299,7 +299,7 @@ class CovidApp extends Component {
               <div className={classes.tinyChart}>
                 <div
                   className={classes.tinych}
-                  style={{ background: 'rgba(28, 177, 66,.1)' }}
+                  style={{ background: "rgba(28, 177, 66,.1)" }}
                 >
                   <h3 style={{ color: colors.green }}>Recovered</h3>
                   <Barchart
@@ -313,7 +313,7 @@ class CovidApp extends Component {
               <div className={classes.tinyChart}>
                 <div
                   className={classes.tinych}
-                  style={{ background: 'rgba(98, 54, 255,.1)' }}
+                  style={{ background: "rgba(98, 54, 255,.1)" }}
                 >
                   <h3 style={{ color: colors.purple }}>Deceased</h3>
                   <Barchart
@@ -325,17 +325,17 @@ class CovidApp extends Component {
                 </div>
               </div>
             </div>
-          </div> */}
-          {/* <div className={classes.tableContainer}>
-            <h2 className={classes.tableHeading}>
-              State/UT Wise Data (Sortable){" "}
-            </h2>
-            <DisplayTable
-              tableData={data}
-              districtLevel={districtLevel}
-              isDarkMode={isDarkMode}
-            />
-          </div> */}
+          </div>
+        </div>
+        <div className={classes.tableContainer}>
+          <h2 className={classes.tableHeading}>
+            State/UT Wise Data (Sortable){" "}
+          </h2>
+          <DisplayTable
+            tableData={data}
+            districtLevel={districtLevel}
+            isDarkMode={isDarkMode}
+          />
         </div>
         {/* <Footer /> */}
       </>
