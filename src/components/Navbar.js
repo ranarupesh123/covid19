@@ -95,7 +95,7 @@ class Navbar extends Component {
                 </div>
               </NavLink>
             </li>
-            {/* <li className={classes.navItem}>
+            <li className={classes.navItem}>
               <NavLink
                 exact
                 to="/essentials"
@@ -107,7 +107,7 @@ class Navbar extends Component {
                   <p>Essentials</p>
                 </div>
               </NavLink>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>

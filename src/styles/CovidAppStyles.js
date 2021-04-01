@@ -42,6 +42,7 @@ export default {
     margin: "1rem",
     position: "relative",
     transition: "all .4s ease",
+    cursor: "pointer",
 
     "&:hover": {
       transform: "scale(1.15)",

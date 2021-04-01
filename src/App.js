@@ -4,6 +4,8 @@ import "./App.css";
 import CovidApp from "./components/CovidApp";
 import Navbar from "./components/Navbar";
 import Paper from "./components/Paper";
+import StaySafe from "./components/StaySafe";
+import Help from "./components/Help";
 
 import Symptoms from "./components/Symptoms";
 
@@ -44,6 +46,16 @@ class App extends Component {
                 exact
                 path="/symptoms"
                 render={() => <Symptoms isDarkMode={isDarkMode} />}
+              />
+              <Route
+                exact
+                path="/stay-safe"
+                render={() => <StaySafe isDarkMode={isDarkMode} />}
+              />
+              <Route
+                exact
+                path="/essentials"
+                render={() => <Help isDarkMode={isDarkMode} />}
               />
               <Route
                 path="/"

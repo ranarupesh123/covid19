@@ -138,7 +138,7 @@ class CovidApp extends Component {
   }
 
   handleNotification() {
-    // this.setState({ expanded: !this.state.expanded });
+    this.setState({ expanded: !this.state.expanded });
   }
 
   formatDate(timestamp) {
