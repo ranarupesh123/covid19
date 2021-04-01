@@ -58,6 +58,15 @@ class App extends Component {
                 render={() => <Help isDarkMode={isDarkMode} />}
               />
               <Route
+                path="/covid19"
+                render={() => (
+                  <CovidApp
+                    setDarkMode={this.setDarkMode}
+                    isDarkMode={this.state.isDarkMode}
+                  />
+                )}
+              />
+              <Route
                 path="/"
                 render={() => (
                   <CovidApp
