@@ -38,7 +38,7 @@ class Navbar extends Component {
     return (
       <div className={classes.navbar}>
         <div className={classes.logo}>
-          <NavLink exact to="/">
+          <NavLink exact to="/covid19">
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
@@ -56,7 +56,7 @@ class Navbar extends Component {
             <li className={classes.navItem}>
               <NavLink
                 exact
-                to="/"
+                to="/covid19"
                 className={classes.navLinks}
                 activeClassName={classes.active}
               >

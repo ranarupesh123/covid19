@@ -66,15 +66,6 @@ class App extends Component {
                   />
                 )}
               />
-              <Route
-                path="/"
-                render={() => (
-                  <CovidApp
-                    setDarkMode={this.setDarkMode}
-                    isDarkMode={this.state.isDarkMode}
-                  />
-                )}
-              />
             </Switch>
           </div>
         </div>
