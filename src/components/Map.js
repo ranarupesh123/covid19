@@ -10,11 +10,10 @@ import styles from "../styles/MapStyles";
 import "../styles/MapStyles.js";
 
 const PROJECTION_CONFIG = {
-  scale: 350,
-  center: [78.9629, 22.5937], // always in [East Latitude, North Longitude]
+  scale: 500,
+  center: [78.9629, 22.5937],
 };
 
-// Red Variants
 const COLOR_RANGE = [
   "#ffedea",
   "#ffcec5",
@@ -92,7 +91,7 @@ class Map extends Component {
           projectionConfig={PROJECTION_CONFIG}
           projection="geoMercator"
           width={600}
-          height={220}
+          height={320}
           data-tip=""
         >
           <Geographies geography={INDIA_TOPO_JSON}>

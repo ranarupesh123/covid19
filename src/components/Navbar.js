@@ -28,9 +28,7 @@ class Navbar extends Component {
   handleToggle(e) {
     this.setState(
       { isExpanded: !this.state.isExpanded },
-      console.log(this.state.isExpanded)
     );
-    // console.log("clicked");
   }
 
   render() {

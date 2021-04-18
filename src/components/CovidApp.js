@@ -13,7 +13,6 @@ import {
 import Barchart from "./Barchart";
 import Charts from "./Charts";
 import DisplayTable from "./DisplayTable";
-import Footer from "./Footer";
 import MapSection from "./MapSection";
 import Overview from "./Overview";
 
@@ -337,7 +336,6 @@ class CovidApp extends Component {
             isDarkMode={isDarkMode}
           />
         </div>
-        {/* <Footer /> */}
       </>
     );
   }

@@ -39,7 +39,6 @@ const useSortableData = (items, config = null) => {
 
   return { items: sortedItems, requestSort, sortConfig };
 };
-
 const DisplayTable = ({ tableData, isDarkMode, districtLevel }) => {
   let result;
   try {

@@ -55,7 +55,7 @@ class MapSection extends Component {
       <div className={classes.mainContainer}>
         <h4 className={classes.heading}>State/UT: {state}</h4>
         <p className={classes.para}>
-          hover over the states in the map to view the stats
+          Hover over the states in the map to view the stats
         </p>
         <div className={classes.container}>
           <div className={classes.panelsContainer}>

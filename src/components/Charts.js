@@ -65,7 +65,7 @@ class Charts extends Component {
               dataKey="totalconfirmed"
               stroke={colors.red}
               dot={false}
-              activeDot={{ r: 8 }}
+              activeDot={{ r: 4 }}
             />
             <Line
               type="monotone"
@@ -91,5 +91,4 @@ class Charts extends Component {
     );
   }
 }
-
 export default withStyles(styles)(Charts);
